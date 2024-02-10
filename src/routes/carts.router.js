@@ -30,7 +30,7 @@ router.post('/:cid/product/:pid', async (req,res) =>{
         const productToAdd = carts.addToCart(cartId,productId)
         res.send(productToAdd)
     }catch(err){
-        res.status(500).send({err:"No se pudo agregar el producto al carrito seleccionado"})
+        res.status(500).send({err:"No se pudo agregar el producto al carrito seleccionado."})
     }
 })
 

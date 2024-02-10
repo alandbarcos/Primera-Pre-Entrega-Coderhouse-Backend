@@ -39,7 +39,7 @@ router.get('/',async (req,res)=>{
             const addedProduct = await products.addProduct(data)
             res.send(addedProduct)
         } catch(err){
-            res.status(500).send('Error al agregar el producto')
+            res.status(500).send('Error al agregar el producto.')
         }
     })
 
